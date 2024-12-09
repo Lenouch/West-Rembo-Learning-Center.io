@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="ano.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <header>
+    <h1>
+        <a href="index.html">
+            <img src="html source/logo2.PNG" alt="School Logo">
+        </a>
+    </h1>
+    <nav>
+        <div class="navi">
+            <ul id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="faculty.html">Faculty</a></li>
+                <li><a href="album.html">Gallery</a></li>
+                <li><a href="about us.html">About Us</a></li>
+                <li><a href="contact us.html">Contacts</a></li>
+            </ul>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+            <button>Search</button>
+        </div>
+
+    </nav>
+</header>
+
+    <main>
+        <!-- About, Mission & Vision Container -->
+        <section id="about-mission-vision">
+            <div class="content-container">
+                <h2>About Us</h2>
+                <p>West Rembo Teachers' Compound Learning Center Inc. is a beacon of educational excellence, dedicated to providing high-quality learning experiences for students of all ages and backgrounds. We foster a nurturing and stimulating environment where every student can reach their full potential.</p>
+
+                <h2>Mission & Vision</h2>
+                <div class="mission-vision-container">
+                    <div class="mission-item">
+                        <i class="fas fa-bullseye"></i>
+                        <h3>Mission</h3>
+                        <p>To realize this Vision, WRTCLCI will become a center of excellence in Pre-school education by offering quality and relevant educational programs. We are committed to providing an education that enhances every child's self-confidence and high-esteem with traditional values.</p>
+                    </div>
+
+                    <div class="separator"></div>
+
+                    <div class="vision-item">
+                        <i class="fas fa-eye"></i>
+                        <h3>Vision</h3>
+                        <p>A distinctively well-respected and strong Learning Center for children ages 3 to 5, integrating different learning areas that are interesting and challenging.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- School Calendar Section -->
+        <section id="calendar">
+    <h2>School Calendar</h2>
+    <div class="calendar-container"> <!-- Added container div -->
+        <div id="calendar-controls" aria-label="Calendar Controls">
+            <button id="prev-month" aria-label="Previous Month">&lt;</button>
+            <h3 id="current-month" aria-live="polite"></h3>
+            <button id="next-month" aria-label="Next Month">&gt;</button>
+        </div>
+
+        <!-- Calendar Content -->
+        <div id="calendar-content" role="grid"></div>
+
+        <!-- Modal for Event Details -->
+        <div id="event-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Event Details</h2>
+                <p id="event-details"></p>
+            </div>
+        </div>
+    </div> <!-- End of calendar-container -->
+</section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Our School. All rights reserved.</p>
+    </footer>
+
+    <!-- Include JavaScript -->
+    <script src="wow.js"></script>
+
+</body>
+</html>

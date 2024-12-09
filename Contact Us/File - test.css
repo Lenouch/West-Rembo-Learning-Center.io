@@ -1,0 +1,178 @@
+:root {
+    --primary-color: #28a745; /* Primary button color */
+    --primary-hover-color: #218838; /* Darker shade for hover */
+    --secondary-color: #f4f4f4; /* Background color */
+    --light-gray: #f9f9f9; /* Light background for sections */
+    --error-color: #dc3545; /* Error message color */
+    --font-family: 'Patrick Hand', cursive; /* Unkempt font */
+    --border-radius: 8px; /* Border radius for rounded corners */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--secondary-color);
+    margin: 0;
+    padding: 0;
+     background-image: url('Frame 2.jpg'); /* Add your image path here */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent repeating the image */
+}
+
+header {
+	background-image: url("html source/header2.PNG"); 
+    background-position: center;
+	background-size: 140%;
+	display: flex ;
+	justify-content: space-between;
+	align-items: center;
+	}
+  h1 {
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-right: 0;
+	width: 10%;
+	}
+  h1 img { 
+	max-width: 200%;
+	height: auto;
+	border: 0;
+	padding: 0;
+	margin-left: 30px;
+	}
+  nav {
+	display: flex;
+	}
+  nav li {
+	font-family: 'Unkempt', sans-serif;
+	margin-right: 30px;
+    }
+  nav ul {
+	display: flex;
+	list-style: none;
+	padding-top: 20px;
+  }
+  nav a {
+	font-weight: bold;
+	text-decoration: none;
+	color: #824006;
+	}
+  .search-bar {
+	background-color: white;
+    padding: 0px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    margin-right: 1em;
+	margin-top: 15px;
+	margin-bottom: 21px;
+	border-style: none;
+    outline: none;
+	border-bottom: 0px solid #ccc;
+  }
+  .search-bar input {
+	border: none;
+	outline: none;
+	}
+  .search-bar button {
+	background-color: red;
+	color: white;
+	border: none;
+	padding: 5px;
+	border-radius: 0 5px 5px 0;
+	}
+  .nav2 {
+	display: flex;
+	
+	}
+  .navi {
+	padding-right: 160px;
+	}
+  .navi ul {
+	display: flex;
+	list-style: none;
+	margin-left: 20px;
+	}
+  .navi li {
+	font-family: 'Unkempt', sans-serif;
+	font-size: 20px;
+	margin-right: 30px;
+	}
+  .navi a {
+	font-weight: bold;
+	text-decoration: none;
+	color: #824006;
+	}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column layout for mobile */
+    gap: 20px;
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    border-radius: var(--border-radius);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+@media (min-width: 600px) {
+    .container {
+        grid-template-columns: 1fr 2fr; /* Two columns layout for larger screens */
+    }
+}
+
+.description,
+.contact-form,
+.faq-section {
+    background-color: var(--light-gray); /* Light background for sections */
+    padding: 15px;
+    border-radius: var(--border-radius);
+}
+
+h1, h2 {
+    text-align: left;
+    font-family: var(--font-family); /* Unkempt font for headings */
+}
+
+.faq-section {
+    margin-top: 20px; 
+}
+
+.faq-item {
+    margin-bottom: 15px; 
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='tel'], /* Added styling for telephone input */
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: var(--border-radius);
+}
+
+button {
+   width: 100%;
+   padding: 10px;
+   background-color: var(--primary-color);
+   color: white;
+   border:none;
+   border-radius: var(--border-radius);
+   cursor:pointer; 
+}
+
+/* Add any additional styles you need here */
+
+.error-message {
+   color: var(--error-color); 
+}

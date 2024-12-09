@@ -1,0 +1,333 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-image: url('Frame 2.jpg'); /* Add your image path here */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent repeating the image */
+}
+
+header {
+	background-image: url("html source/header2.PNG"); 
+    background-position: center;
+	background-size: 140%;
+	display: flex ;
+	justify-content: space-between;
+	align-items: center;
+	}
+  h1 {
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-right: 0;
+	width: 10%;
+	}
+  h1 img { 
+	max-width: 200%;
+	height: auto;
+	border: 0;
+	padding: 0;
+	margin-left: 30px;
+	}
+  nav {
+	display: flex;
+	}
+  nav li {
+	font-family: 'Unkempt', sans-serif;
+	margin-right: 30px;
+    }
+  nav ul {
+	display: flex;
+	list-style: none;
+	padding-top: 20px;
+  }
+  nav a {
+	font-weight: bold;
+	text-decoration: none;
+	color: #824006;
+	}
+  .search-bar {
+	background-color: white;
+    padding: 0px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    margin-right: 1em;
+	margin-top: 15px;
+	margin-bottom: 21px;
+	border-style: none;
+    outline: none;
+	border-bottom: 0px solid #ccc;
+  }
+  .search-bar input {
+	border: none;
+	outline: none;
+	}
+  .search-bar button {
+	background-color: red;
+	color: white;
+	border: none;
+	padding: 5px;
+	border-radius: 0 5px 5px 0;
+	}
+  .nav2 {
+	display: flex;
+	
+	}
+  .navi {
+	padding-right: 160px;
+	}
+  .navi ul {
+	display: flex;
+	list-style: none;
+	margin-left: 20px;
+	}
+  .navi li {
+	font-family: 'Unkempt', sans-serif;
+	font-size: 20px;
+	margin-right: 30px;
+	}
+  .navi a {
+	font-weight: bold;
+	text-decoration: none;
+	color: #824006;
+	}
+	
+	/* Navbar styles */
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+.topnav .icon {
+    display: none; /* Hidden by default */
+}
+
+/* Responsive styles */
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) { display: none; } /* Hide all links except the first one */
+    .topnav a.icon { float: right; display: block; } /* Show the hamburger icon */
+}
+
+.topnav.responsive { position: relative; }
+
+.topnav.responsive .icon { position: absolute; right: 0; top: 0; }
+
+.topnav.responsive a {
+    float: none; /* Stack links vertically */
+    display: block;
+    text-align: left; /* Align text to the left */
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+
+
+#about-mission-vision {
+    background-color: #219EBC; /* Light background for contrast */
+    padding: 40px 20px; /* Padding around the container */
+    border: 2px solid #4CAF50; /* Green border around the container */
+    border-radius: 10px; /* Rounded corners */
+    margin-top: 20px; /* Space above the container */
+}
+
+.content-container {
+    max-width: 800px; /* Limit the width of the content */
+    margin: auto; /* Center the content */
+}
+
+.content-container h2 {
+    text-align: center; /* Center headings */
+    color: #333; /* Darker color for better readability */
+}
+
+.content-container p {
+    font-size: 1.1em; /* Slightly larger font size for paragraph text */
+    color: black; /* Softer color for paragraph text */
+    margin-bottom: 30px; /* Space below paragraph */
+}
+
+.mission-vision-container {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between items */
+}
+
+.mission-item, .vision-item {
+    flex: 1; /* Take equal space */
+    background-color: #e0f7fa; /* Light blue background for items */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15); 
+}
+
+.mission-item h3, .vision-item h3 {
+   margin-top: 10px; 
+   color: #4CAF50; /* Consistent theme color */
+   text-align: center; /* Centered text */
+   font-size: 1.5em; /* Larger font size for headings */
+}
+
+.mission-item i, .vision-item i {
+   font-size: 50px; /* Larger icons for better visibility */
+   color: #023047; 
+   display: block; 
+   margin-bottom: 15px; 
+   text-align: center; /* Centered icons */
+}
+
+/* Separator styles */
+.separator {
+    width: 2px; /* Width of the separator line */
+    background-color: #ccc; /* Color of the separator line */
+    margin: auto; /* Center the separator vertically between items */
+} 
+
+.calendar-container {
+    background-color: rgba(255, 255, 255, 0.9); /* Light background for contrast */
+    padding: 20px; /* Padding around the container */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin-top: 20px; /* Space above the container */
+}
+
+#calendar-controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Space between controls */
+    margin-bottom: 20px; /* Space below controls */
+}
+
+#calendar-controls button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px; 
+    transition: background-color 0.3s ease-in-out; /* Smooth transition */
+}
+
+#calendar-controls button:hover {
+    background-color: #45a049; /* Darker shade on hover */
+}
+
+#calendar-content {
+    margin-top: 20px; 
+}
+
+
+/* Modal Styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed position */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.8); /* Black w/ opacity for background */
+}
+
+.modal-content {
+    background-color: #fff; /* White background for modal content */
+    margin: 15% auto; /* Centered vertically and horizontally */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+    max-width: 500px; /* Max width for modal */
+}
+
+.close {
+    color: #aaa; /* Light gray color for close button */
+    float: right; /* Float to the right */
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000; /* Darker color on hover/focus */
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Event Details Styling */
+h2 {
+    margin-top: 0; /* Remove top margin for better spacing */
+}
+
+#event-details {
+    font-size: 16px; /* Font size for event details text */
+    line-height: 1.5; /* Improved line height for readability */
+}
+
+/* Add a subtle transition effect when the modal appears */
+.modal-content {
+    opacity: 0;
+    transform: translateY(-30px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.modal.show .modal-content {
+    opacity: 1;
+    transform: translateY(0);
+}
+.close {
+   color:#aaa;
+   float:right;
+   font-size:28px;
+   font-weight:bold;
+}
+.close:hover,
+.close:focuss {
+   color:black;
+   text-decoration:none;
+   cursor:pointer;
+}
+
+/* Calendar styling */
+#calendar-content table {
+   width: 100%;
+   border-collapse: collapse;
+}
+#calendar-content th, #calendar-content td {
+   border: 1px solid #ddd;
+   padding: 10px; 
+}
+#calendar-content th {
+   background-color:#f4f4f4; 
+}
+td:hover {
+   background-color:#e0f7fa; 
+}
